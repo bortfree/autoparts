@@ -105,6 +105,9 @@
 	.home_sect .title_wrap_home p{
 		margin-top: 8px;
 	}
+	#form3, .done{
+		width: 470px;
+	}
 
 
 
@@ -149,6 +152,22 @@
 	footer .contact_wrap{
 		width: 300px;
 		margin-left: -150px;
+	}
+	#form3, .done{
+		width: 300px;
+	}
+	#form3 .form3_wrap h3, #form3 .done_wrap h3, .done .form3_wrap h3, .done .done_wrap h3{
+		font-size: 27px;
+	}
+	#form3 .form3_wrap span, #form3 .done_wrap span, .done .form3_wrap span, .done .done_wrap span{
+		font-size: 21px;
+		line-height: 26px;
+	}
+	#form3 .form3_wrap input, #form3 .done_wrap input, .done .form3_wrap input, .done .done_wrap input{
+		width: 270px;
+	}
+	#form3 .form3_wrap .but_popup, #form3 .done_wrap .but_popup, .done .form3_wrap .but_popup, .done .done_wrap .but_popup{
+		width: 270px;
 	}
 
 
