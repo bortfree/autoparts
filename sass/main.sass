@@ -1,0 +1,410 @@
+@import "bourbon/bourbon"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "opensansregular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	color: #000
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: #000
+
+
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none
+		outline: none
+
+.clearpad
+	padding: 0
+
+.hidden
+	display: none
+
+
+.top_line
+	p
+		color: #ee0101
+		font-family: "opensanssemibold", sans-serif
+		font-size: 19px
+		margin-bottom: 0
+		float: right
+	.menu
+		float: right
+		margin-top: 5px
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				font-size: 15px
+				display: inline-block
+				font-weight: 400
+				line-height: 27px
+				text-transform: uppercase
+				a
+					color: #151515
+					display: block
+					width: 100%
+					padding: 5px 22px
+					transition: all .25s ease
+					&:hover
+						background-color: #959595
+						color: white
+	.button_wrap
+		float: right
+		margin-top: 37px
+
+.button
+	background-color: #ff6c12
+	border-radius: 3px
+	color: #fff
+	font-size: 16px
+	padding: 12px 30px
+	&:hover
+		color: #fff
+		background-color: darken(#ff6c12, 7%)
+
+.home_sect
+	background-image: url(../img/bg_home_sect.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top center
+	min-height: 550px
+	text-align: center
+	position: relative
+	.bg_fon_title
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 112px
+		background-image: url(../img/bg_fon_title.png)
+		opacity: .25
+		z-index: 0
+	.title_wrap_home
+		position: relative
+		z-index: 2
+		h1
+			color: #ffee39
+			font-family: "impact", sans-serif
+			font-size: 22px
+			font-weight: 900
+			line-height: 38px
+			text-transform: uppercase
+			margin-bottom: 0
+			margin-top: 15px
+			letter-spacing: 1px
+		span
+			color: #ffee39
+			font-family: "impact", sans-serif
+			font-size: 26px
+			font-weight: 900
+			line-height: 37px
+		p
+			text-shadow: 0 2px 5px rgba(0, 0, 0, 0.19)
+			color: white
+			font-family: "opensansbold", sans-serif
+			font-size: 20px
+			margin-top: 50px
+	.item_descr
+		margin-top: 40px
+		span
+			display: inline-block
+			position: relative
+			margin: 0 43px
+			text-shadow: 0 2px 5px rgba(0, 0, 0, 0.19)
+			color: white
+			font-family: "opensanssemibold", sans-serif
+			font-size: 16px
+			&::before
+				content: ''
+				position: absolute
+				top: 3px
+				left: -26px
+				width: 18px
+				height: 18px
+				background-image: url(../img/ic_home.png)
+			
+.prosm_cat
+	display: inline-block
+	background-color: #ff0505
+	font-size: 19px
+	color: #fff
+	padding: 11px 30px
+	border-radius: 5px 5px 0 0
+	position: absolute
+	bottom: 0
+	left: 50%
+	cursor: pointer
+	z-index: 1
+	margin-left: -130px
+	&::after
+		content: ''
+		position: absolute
+		width: 0
+		height: 0
+		border: 124px solid transparent
+		border-top: 16px solid #ff0505
+		bottom: -140px
+		left: 0
+	
+.icon_down
+	display: inline-block
+	position: absolute
+	bottom: -14px
+	left: 50%
+	margin-left: -72px
+
+.icon1_home_sect, .icon2_home_sect, .icon3_home_sect, .icon4_home_sect
+	position: absolute
+	display: inline-block
+
+.icon1_home_sect
+	left: 12%
+	top: 200px
+
+.icon2_home_sect
+	left: 31%
+	bottom: 154px
+
+.icon3_home_sect
+	right: 36%
+	bottom: 200px
+
+.icon4_home_sect
+	right: 12%
+	top: 185px
+
+section
+	padding: 30px 0
+	text-align: center
+
+.title_wrap
+	h2
+		font-size: 27px
+		position: relative
+		padding-bottom: 17px
+		&::before
+			content: ''
+			position: absolute
+			width: 592px
+			height: 10px
+			background-image: url(../img/border_title.png)
+			bottom: 0
+			left: 50%
+			margin-left: -302px
+
+
+.sect1
+	.slider
+		margin-top: 35px
+		.slide
+			display: inline-block
+			margin: 0 5px
+
+.owl-carousel
+	.owl-controls
+		.owl-nav
+			.owl-prev, .owl-next
+				position: absolute
+				display: inline-block
+				width: 18px
+				height: 38px
+				top: 30px
+			.owl-prev
+				left: -65px
+				background-image: url(../img/arr_prev.png)
+			.owl-next
+				right: -65px
+				background-image: url(../img/arr_next.png)
+
+.items_catalog
+	margin-top: 40px
+
+.itemcat
+	width: 100%
+	margin: 35px 0
+	&__img
+		height: 237px
+		border: 1px solid #ccc
+		border-radius: 3px
+		text-align: center
+		line-height: 237px
+		vertical-align: middle
+		width: 100%
+		img
+			line-height: 237px
+	&__descr
+		text-align: left
+		p
+			font-family: "opensanslight", sans-serif
+			font-size: 18px
+			margin: 5px 0
+			text-align: left
+		span
+			color: #dc0000
+			font-family: "opensanssemibold", sans-serif
+			font-size: 18px
+		.but_cat
+			border: 1px solid red
+			display: inline-block
+			margin-top: -8px
+			float: right
+			border-radius: 10em
+			padding: 7px 21px 
+			font-size: 12px
+			color: #000
+			transition: all .25s ease
+			&:hover
+				color: #fff
+				background-color: red
+		
+.sect2
+	background-image: url(../img/bg_sect2.jpg)
+
+	p
+		font-size: 21px
+
+.form_inline
+	display: inline-block
+	width: 366px
+	input
+		width: 100%
+		display: block
+		background-color: white
+		border: 1px solid #a1a1a1
+		border-radius: 4px
+		box-shadow: inset 0 1px 1px #979797
+		padding: 5px 18px
+		margin-bottom: 25px
+		font-size: 18px
+	button
+		border: none
+		font-size: 18px
+		padding: 10px 75px
+		margin-top: 15px
+		margin-bottom: 35px
+			
+.color
+	color: #fff
+
+.sect3
+	background-image: url(../img/bg_sect3.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	min-height: 562px
+	font-size: 21px
+	.sect3_descr
+		text-align: left
+		p
+			margin: 10px 0
+		ul
+			padding-left: 18px
+			margin: 0
+			li
+				color: red
+				font-size: 17px
+				span
+					color: #fff
+					font-size: 21px
+
+.sect4
+	.title_wrap
+		margin-bottom: 40px
+	.item
+		text-align: left
+		margin: 20px 0
+		&__img
+			display: inline-block
+			vertical-align: top
+			float: left
+			position: relative
+			top: 10px
+			margin-right: 20px
+		&__descr
+			display: inline-block
+			width: 68%
+			h4
+				margin: 0
+				font-family: "opensanssemibold", sans-serif
+				font-size: 22px
+			p
+				margin-top: 10px
+				font-size: 18px
+	.item_right
+		margin-left: 70px
+		.item__descr
+			width: 78% 
+
+.sect5
+	background-image: url(../img/bg_sect5.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	min-height: 753px
+	font-size: 21px
+	p
+		font-size: 21px
+		line-height: 29px
+		margin: 80px 0
+		span
+			font-size: 23px
+			color: #ffee39
+			font-family: "opensanssemibold", sans-serif
+	.last
+		margin-bottom: 0
+
+.arrow
+	position: relative
+	&::before, &::after
+		content: ''
+		position: absolute
+		width: 23px
+		height: 33px
+		background-image: url(../img/arr_down.png)
+		left: 50%
+		margin-left: -17px
+	&::before
+		top: -52px
+	&::after
+		bottom: -52px
