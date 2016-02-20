@@ -55,6 +55,51 @@ a {
 .hidden {
   display: none; }
 
+/* Important styles */
+.toggle-mnu {
+  display: block;
+  width: 32px;
+  height: 31px;
+  margin: 36px auto 0; }
+
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -12px; }
+
+.toggle-mnu span:after {
+  top: 12px; }
+
+.toggle-mnu span {
+  position: relative;
+  display: block; }
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+  width: 100%;
+  height: 6px;
+  background-color: red;
+  transition: all 0.3s;
+  backface-visibility: hidden; }
+
+/* on activation */
+.toggle-mnu.on span {
+  background-color: transparent;
+  box-shadow: none; }
+
+.toggle-mnu.on span:before {
+  transform: rotate(45deg) translate(10px, 5px); }
+
+.toggle-mnu.on span:after {
+  transform: rotate(-45deg) translate(11px, -8px); }
+
+.toggle-mnu.on + #menu {
+  opacity: 1;
+  visibility: visible; }
+
 .top_line p {
   color: #ee0101;
   font-family: "opensanssemibold", sans-serif;
@@ -287,9 +332,9 @@ section {
         color: #fff;
         background-color: red; }
 
-.sect2 {
+.sect2, .sect6 {
   background-image: url(../img/bg_sect2.jpg); }
-  .sect2 p {
+  .sect2 p, .sect6 p {
     font-size: 21px; }
 
 .form_inline {
@@ -395,5 +440,98 @@ section {
     top: -52px; }
   .arrow::after {
     bottom: -52px; }
+
+.sect6 {
+  background: none; }
+  .sect6 p {
+    margin: 40px 0; }
+  .sect6 button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 0; }
+
+footer {
+  position: relative;
+  display: block; }
+  footer .contact_wrap {
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    width: 488px;
+    opacity: 0.75;
+    background-color: white;
+    border-radius: 4px;
+    top: 60px;
+    left: 50%;
+    margin-left: -244px;
+    text-align: center;
+    padding-bottom: 80px; }
+    footer .contact_wrap h3 {
+      color: #101010;
+      font-family: "opensanssemibold", sans-serif;
+      font-size: 28px;
+      line-height: 30px; }
+    footer .contact_wrap p {
+      color: #121212;
+      font-size: 18px;
+      line-height: 27px; }
+      footer .contact_wrap p span {
+        color: #1d1d1d;
+        font-family: "opensanssemibold", sans-serif;
+        font-size: 19px;
+        font-weight: 500; }
+
+#form3, .done {
+  padding: 8px;
+  width: 729px;
+  margin: auto;
+  background-color: #363636;
+  position: relative;
+  text-align: center; }
+  #form3 .form3_wrap, #form3 .done_wrap, .done .form3_wrap, .done .done_wrap {
+    border: 2px solid white;
+    border-radius: 3px;
+    margin: auto;
+    position: relative;
+    text-align: center; }
+    #form3 .form3_wrap h3, #form3 .done_wrap h3, .done .form3_wrap h3, .done .done_wrap h3 {
+      font-size: 30px;
+      font-family: "opensanssemibold", sans-serif;
+      color: #fff;
+      margin: 80px 0 0; }
+    #form3 .form3_wrap span, #form3 .done_wrap span, .done .form3_wrap span, .done .done_wrap span {
+      font-size: 26px;
+      color: #fff;
+      display: block;
+      position: relative;
+      margin-bottom: 70px; }
+    #form3 .form3_wrap input, #form3 .done_wrap input, .done .form3_wrap input, .done .done_wrap input {
+      display: block;
+      margin: 0 auto;
+      width: 364px;
+      border: 1px solid #a1a1a1;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 1px #979797;
+      padding: 5px 18px;
+      margin-bottom: 25px; }
+    #form3 .form3_wrap .but_popup, #form3 .done_wrap .but_popup, .done .form3_wrap .but_popup, .done .done_wrap .but_popup {
+      width: 300px;
+      background-color: #ec0000;
+      border-radius: 4px;
+      border: none;
+      font-size: 18px;
+      color: #fff;
+      padding: 5px 18px;
+      margin-top: 20px;
+      margin-bottom: 80px;
+      transition: all 0.25s ease; }
+      #form3 .form3_wrap .but_popup:hover, #form3 .done_wrap .but_popup:hover, .done .form3_wrap .but_popup:hover, .done .done_wrap .but_popup:hover {
+        background-color: #c80000; }
+
+.mfp-bg {
+  background-color: #fff; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,19 @@
 $(function() {
 
+	$(".toggle-mnu").click(function(){
+          $(this).toggleClass("on");
+          $(".menu").slideToggle();
+        });
+
+	$(".popup").magnificPopup();
+
+	$(".menu ul li a, .button").mPageScroll2id();
+
+	$(".prosm_cat").click(function() {
+		$("html, body").animate({ scrollTop: $(".main_head").height()+50 }, "slow");
+		return false;
+	});
+
 	$(".itemcat__descr p").equalHeights();
 	$(".equal_sect4").equalHeights();
 
@@ -7,6 +21,10 @@ $(function() {
 		items: 5,
 		nav: true,
 		loop: true,
+		itemsDesktop      : [1199,4],
+    itemsDesktopSmall : [979,3],
+    itemsTablet       : [768,2],
+    itemsMobile       : [479,1],
 		navText: ""
 	});
 
@@ -26,7 +44,12 @@ $(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$.magnificPopup.open({
+        items: {
+          src: '.done'
+        },
+        type: 'inline'
+      });
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
