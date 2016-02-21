@@ -108,6 +108,12 @@
 	#form3, .done{
 		width: 470px;
 	}
+	.owl-carousel .owl-controls .owl-buttons .owl-prev{
+		left: 0;
+	}
+	.owl-carousel .owl-controls .owl-buttons .owl-next{
+		right: 0;
+	}
 
 
 

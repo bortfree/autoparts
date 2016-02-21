@@ -18,15 +18,11 @@ $(function() {
 	$(".equal_sect4").equalHeights();
 
 	$(".slider").owlCarousel({
-		items: 5,
-		nav: true,
-		loop: true,
-		itemsDesktop      : [1199,4],
-    itemsDesktopSmall : [979,3],
-    itemsTablet       : [768,2],
-    itemsMobile       : [479,1],
-		navText: ""
-	});
+        	navigation: true,
+        	navigationText: "",
+        	items: 5
+        	
+        });
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

@@ -278,16 +278,16 @@ section {
     display: inline-block;
     margin: 0 5px; }
 
-.owl-carousel .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next {
+.owl-carousel .owl-controls .owl-buttons .owl-prev, .owl-carousel .owl-controls .owl-buttons .owl-next {
   position: absolute;
   display: inline-block;
   width: 18px;
   height: 38px;
   top: 30px; }
-.owl-carousel .owl-controls .owl-nav .owl-prev {
+.owl-carousel .owl-controls .owl-buttons .owl-prev {
   left: -65px;
   background-image: url(../img/arr_prev.png); }
-.owl-carousel .owl-controls .owl-nav .owl-next {
+.owl-carousel .owl-controls .owl-buttons .owl-next {
   right: -65px;
   background-image: url(../img/arr_next.png); }
 
